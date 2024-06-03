@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        fieldset {
+            border: 2px solid #333;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 30%;
+            /* Set the width to 30% */
+        }
+
+        nav {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 20px;
+        }
+
+        nav td {
+            border: 1px solid black;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        label {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+            display: inline-block;
+            /* Set to inline-block */
+        }
+
+        input[type="submit"] {
+
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <center>
+            <nav>
+                <table>
+                    <tr>
+                        <!-- Logo -->
+                        <td>
+                            <p>HASSAN JAMAL</p>
+                        </td>
+
+                        <!-- Navigation Links -->
+                        <td><a href="index.html">HOME</a></td>
+                        <td><a href="about.html">ABOUT</a></td>
+                        <td><a href="gallery.html">GALLERY</a></td>
+                        <td><a href="media.html">MEDIA</a></td>
+                        <td><a href="contact.html">CONTACT</a></td>
+
+                        <!-- Login and Register -->
+                        <td><a href="login.html">LOGIN</a></td>
+                        <td><a href="register.html">REGISTER</a></td>
+                    </tr>
+                </table>
+            </nav>
+        </center>
+        <center>
+            <hr>
+            <h1>This is Login page</h1>
+            <hr>
+
+            <h2>Please register to continue</h2>
+            <h3>All the fields are required.</h3>
+            <form action="register.php" method="post">
+                <fieldset>
+                    <legend>Register</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <div class="gender" style="display: flex; flex-direction:row; padding:5px;">
+                        <label for="gender">Gender:</label>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">
+
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+
+                    </div>
+                    <div class="media" style="display: flex; flex-direction:row; padding:5px;">
+                        <label for="media">Media:</label>
+                        <label for="music">Music</label>
+                        <input type="checkbox" id="music" name="hobbies[]" value="music">
+
+                        <label for="art">Art Painting</label>
+                        <input type="checkbox" id="art" name="hobbies[]" value="art">
+
+                    </div>
+
+                    <label for="dob">DOB:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="photo">Upload your photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+
+                    <input type="submit" value="Register">
+                </fieldset>
+            </form>
+            <p>Already a user? <a href="login.html">Login</a></p>
+        </center>
+    </main>
+
+    <footer>
+        <hr>
+        <p style="text-align: center;">
+            Copyrights &copy; 2024. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>

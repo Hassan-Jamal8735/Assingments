@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: #ddd;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 15%; /* Adjust the width as needed */
+    height: auto;
+}
+
+.button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 50px auto;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}

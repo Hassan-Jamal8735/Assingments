@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My Feedback form</h1>
+    <div class="input-panel">
+        <div class="name">
+            <P>Name:</P>
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="password">
+            <P>Password:</P>
+            <input type="text" placeholder="Enter your Password">
+        </div>
+        <div class="email">
+            <P>E-mail:</P>
+            <input type="text" placeholder="Enter your E-mail">
+        </div>
+    </div>
+    <div class="check-box">
+        <p>Please select all the emotions that apply to you:</p>
+        <input type="radio" name="emotion" id="angry">
+        <label for="angry">Angry</label><br>
+
+        <input type="radio" name="emotion" id="sad">
+        <label for="sad">Sad</label><br>
+
+        <input type="radio" name="emotion" id="happy">
+        <label for="happy">Happy</label><br>
+
+    </div>
+    <div class="check-box">
+        <p>how satisfied are you with our service?</p>
+        <input type="radio" name="satisfaction" id="very-satisfied">
+        <label for="very-satisfied">Very Satisfied</label><br>
+
+        <input type="radio" name="satisfaction" id="satisfied">
+        <label for="satisfied">Satisfied</label><br>
+
+        <input type="radio" name="satisfaction" id="dissatisfied">
+        <label for="dissatisfied">Dissatisfied</label><br>
+
+    </div>
+    <div class="check-box">
+        <p>Your Gender?</p>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+
+
+    </div><div class="comments" style="display: flex; flex-direction: row;">
+        <p>Further Comments:</p><input type="text">
+    </div>
+    <div class="photos"><p>Bio Photo:</p> <input type="file" id="fileInput" name="fileInput"><p>No file Attached</p></div>
+    <div class="ee">
+        <p>Location Visited:</p><select name="random" id="">
+            <option value="1">FSD</option>
+            <option value="2">LHR</option>
+            <option value="3">ISB</option>
+        </select>
+        <button>Submit</button>
+    </div>
+    <hr>
+    <input type="text" placeholder="Enter the name">
+</body>
+
+</html>
