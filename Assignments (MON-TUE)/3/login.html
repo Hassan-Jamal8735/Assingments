@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hassan Jamal - Login</title>
+    <style>
+        /* Add some basic styling */
+       
+        .container {
+            width: 300px;
+            margin: 0 auto;
+
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #000;
+        }
+
+        .register-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <nav style="border: 1px solid black; border-collapse: collapse; width: 70%; margin-top: 20px;">
+            <table>
+                <tr>
+                    <!-- Logo -->
+                    <td style="border: 1px solid black;">
+                        <p>HASSAN JAMAL</p>
+                    </td>
+
+                    <!-- Navigation Links -->
+                    <td style="border-right: 1px solid black;">
+                        <a href="index.html">HOME</a>
+                    </td>
+                    <td style="border-right: 1px solid black;">
+                        <a href="about.html">ABOUT</a>
+                    </td>
+                    <td style="border-right: 1px solid black;">
+                        <a href="gallery.html">GALLERY</a>
+                    </td>
+                    <td style="border-right: 1px solid black;">
+                        <a href="media.html">MEDIA</a>
+                    </td>
+                    <td style="border-right: 1px solid black;">
+                        <a href="contact.html">CONTACT</a>
+                    </td>
+
+                    <!-- Login and Register -->
+                    <td style="border-right: 1px solid black;">
+                        <a href="login.html">LOGIN</a>
+                    </td>
+                    <td style="border-right: 1px solid black;">
+                        <a href="register.html">REGISTER</a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </center>
+    <h1 style="text-align: center;">This is Login Page</h1>
+    <hr>
+    <h3 style="text-align: center;">Please Login to countinue</h3>
+    <hr>
+    <div class="container">
+        <h1>Hassan Network</h1>
+        <p>Please login to continue</p>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+        <p class="register-link">Not a user? <a href="register.html">Register here</a></p>
+
+        <p class="contact">Contact</p>
+    </div>
+    <hr>
+
+    <p style="text-align: center;">
+        Copyrights &copy; 2024. All rights reserved.
+    </p>
+</body>
+
+</html>
